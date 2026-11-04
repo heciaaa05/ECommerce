@@ -45,14 +45,33 @@ services:
     environment:
       ASPNETCORE_ENVIRONMENT: Development      # để bật Swagger; production thật thì đổi sang Production
       Database__AutoMigrate: "true"
+      Database__SeedDemoData: ${SEED_DEMO_DATA:-true}   # nạp sản phẩm mẫu nếu DB còn trống; đặt false để tắt
       ConnectionStrings__DefaultConnection: "Server=sql,1433;Database=ECommerceDb;User Id=sa;Password=${SA_PASSWORD:-YourStrong@Passw0rd};TrustServerCertificate=True"
       ConnectionStrings__Redis: "redis:6379"
       JwtSettings__Secret: ${JWT_SECRET:-DOI_CHUOI_NAY_THANH_BI_MAT_DAI_IT_NHAT_32_KY_TU_123456}
       VnPay__TmnCode: ${VNPAY_TMNCODE}
       VnPay__HashSecret: ${VNPAY_HASHSECRET}
       VnPay__ReturnUrl: ${VNPAY_RETURN_URL}
+      Recommender__BaseUrl: "http://recommender:8000"
     ports:
       - "5203:8080"                            # giữ nguyên localhost:5203 để ngrok http 5203 vẫn dùng được
+    restart: unless-stopped
+
+  recommender:
+    build: ./recommender
+    container_name: ecommerce-recommender
+    depends_on:
+      - api                                    # lấy danh mục sản phẩm từ API; chưa lên thì tự thử lại
+    environment:
+      API_BASE_URL: "http://api:8080"
+      REFRESH_SECONDS: "300"                   # nạp lại danh mục sau mỗi 5 phút
+    ports:
+      - "8000:8000"
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request as u; u.urlopen('http://localhost:8000/health')"]
+      interval: 15s
+      timeout: 5s
+      retries: 5
     restart: unless-stopped
 
 volumes:

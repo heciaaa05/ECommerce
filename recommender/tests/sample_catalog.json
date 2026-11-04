@@ -1,0 +1,609 @@
+[
+ {
+  "id": "d72f4d64-e28a-4971-87f5-0913744da6d7",
+  "name": "Logitech G Pro X Superlight 2",
+  "brand": "Logitech",
+  "basePrice": 3490000,
+  "description": "Chuột gaming không dây siêu nhẹ cho esports FPS, cảm biến HERO 2 độ chính xác cao, pin lâu, polling rate 2000Hz.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "01646736-e8fd-4023-9d1a-f256bf283414",
+    "variantName": "Đen",
+    "price": 3490000,
+    "stockQuantity": 20,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"60g\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "95ce9de5-903b-4fc4-9c39-0ceca506dd19",
+    "variantName": "Trắng",
+    "price": 3490000,
+    "stockQuantity": 15,
+    "attributesJson": "{\"color\": \"white\", \"weight\": \"60g\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "78ebd897-9644-407b-96bf-f52e64391852",
+  "name": "Razer DeathAdder V3 Pro",
+  "brand": "Razer",
+  "basePrice": 3990000,
+  "description": "Chuột không dây thiết kế công thái học cho esports FPS, cảm biến Focus Pro 30K, trọng lượng nhẹ.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "87ec23a8-e6a1-4698-b259-e85fde0b728e",
+    "variantName": "Đen",
+    "price": 3990000,
+    "stockQuantity": 18,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"63g\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "cee5c949-eeaa-4665-820a-fa91f34c1f17",
+  "name": "Razer Viper V3 Pro",
+  "brand": "Razer",
+  "basePrice": 3790000,
+  "description": "Chuột không dây siêu nhẹ đối xứng cho esports FPS, cảm biến Focus Pro 35K, polling rate 8000Hz.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "8e546355-938f-4d0d-a88f-c78cb9651697",
+    "variantName": "Đen",
+    "price": 3790000,
+    "stockQuantity": 12,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"54g\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "f7d79998-c23c-481d-b5ec-a6eeb5683ac2",
+    "variantName": "Trắng",
+    "price": 3790000,
+    "stockQuantity": 10,
+    "attributesJson": "{\"color\": \"white\", \"weight\": \"54g\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "3fb02ae7-0b45-4b62-950a-0e9480932b49",
+  "name": "Logitech G502 Hero",
+  "brand": "Logitech",
+  "basePrice": 1190000,
+  "description": "Chuột gaming có dây nhiều nút lập trình, tạ điều chỉnh trọng lượng, cảm biến HERO 25K, phù hợp MMO và FPS.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "353047e9-e88b-402b-81f1-207fa9cec329",
+    "variantName": "Đen",
+    "price": 1190000,
+    "stockQuantity": 40,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"121g\", \"connectivity\": \"wired\"}"
+   }
+  ]
+ },
+ {
+  "id": "128663c7-6501-494d-b04d-e31c6c25f1f2",
+  "name": "SteelSeries Aerox 5 Wireless",
+  "brand": "SteelSeries",
+  "basePrice": 2890000,
+  "description": "Chuột không dây nhiều nút bên hông cho MMO, thiết kế tổ ong siêu nhẹ, kết nối Bluetooth và 2.4GHz.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "a3d6fb8d-3608-477f-b461-8a5a54eb3269",
+    "variantName": "Đen",
+    "price": 2890000,
+    "stockQuantity": 14,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"74g\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "7ff38cca-b108-4444-8603-af15b8141e14",
+  "name": "Glorious Model O 2 Wireless",
+  "brand": "Glorious",
+  "basePrice": 2490000,
+  "description": "Chuột không dây siêu nhẹ thiết kế lỗ tổ ong, cảm biến BAMF 2.0, dành cho FPS và gamer thích trải nghiệm nhẹ.",
+  "categoryName": "Chuột gaming",
+  "variants": [
+   {
+    "id": "30b4125c-1198-4434-8ea5-4ecb86f59606",
+    "variantName": "Đen",
+    "price": 2490000,
+    "stockQuantity": 16,
+    "attributesJson": "{\"color\": \"black\", \"weight\": \"68g\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "cb08942c-94db-4597-8617-e696ae22c100",
+    "variantName": "Trắng",
+    "price": 2490000,
+    "stockQuantity": 9,
+    "attributesJson": "{\"color\": \"white\", \"weight\": \"68g\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "8dc784c9-5423-4826-9c97-4be97e01534b",
+  "name": "Keychron K8 Pro",
+  "brand": "Keychron",
+  "basePrice": 2690000,
+  "description": "Bàn phím cơ không dây layout TKL, hot-swap switch, tương thích Windows và macOS, kết nối Bluetooth hoặc có dây.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "960a70b9-dcfd-4d04-9bb1-29abf5e0df7a",
+    "variantName": "Red Switch",
+    "price": 2690000,
+    "stockQuantity": 25,
+    "attributesJson": "{\"switch\": \"Red\", \"layout\": \"TKL\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "6adbb803-8288-4504-9863-2c3810f22d2d",
+    "variantName": "Brown Switch",
+    "price": 2690000,
+    "stockQuantity": 22,
+    "attributesJson": "{\"switch\": \"Brown\", \"layout\": \"TKL\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "70175020-d5b0-4a5b-8c06-eb8bb530ef23",
+  "name": "Logitech G Pro X TKL Lightspeed",
+  "brand": "Logitech",
+  "basePrice": 4290000,
+  "description": "Bàn phím cơ không dây TKL cho esports, switch GX, độ trễ thấp, thiết kế gọn cho người chơi FPS.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "21bd10d5-bc02-4e78-b920-641beb093658",
+    "variantName": "GX Red",
+    "price": 4290000,
+    "stockQuantity": 10,
+    "attributesJson": "{\"switch\": \"Red\", \"layout\": \"TKL\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "c8bc0302-6044-4c03-9cdb-45dcd001bf89",
+  "name": "Razer BlackWidow V4 Pro",
+  "brand": "Razer",
+  "basePrice": 5990000,
+  "description": "Bàn phím cơ fullsize cao cấp có dây, switch Razer Green, núm xoay đa năng, đèn RGB Chroma.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "f0232222-e8e6-4044-920f-772fa0b9c4db",
+    "variantName": "Green Switch",
+    "price": 5990000,
+    "stockQuantity": 8,
+    "attributesJson": "{\"switch\": \"Green\", \"layout\": \"Fullsize\", \"connectivity\": \"wired\"}"
+   }
+  ]
+ },
+ {
+  "id": "2ed71a16-b55e-4051-99aa-51b7ede4a8ad",
+  "name": "SteelSeries Apex Pro TKL",
+  "brand": "SteelSeries",
+  "basePrice": 4890000,
+  "description": "Bàn phím cơ TKL với switch OmniPoint điều chỉnh được điểm kích hoạt, phản hồi cực nhanh cho esports.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "e475bd59-beb9-47f8-b117-0eab8cff1e1b",
+    "variantName": "OmniPoint",
+    "price": 4890000,
+    "stockQuantity": 11,
+    "attributesJson": "{\"switch\": \"OmniPoint\", \"layout\": \"TKL\", \"connectivity\": \"wired\"}"
+   }
+  ]
+ },
+ {
+  "id": "c7f5775d-96cf-42cf-9232-3cb44c13f60c",
+  "name": "AKKO 3068B Plus",
+  "brand": "AKKO",
+  "basePrice": 1890000,
+  "description": "Bàn phím cơ layout 65% không dây giá tốt, hot-swap, keycap PBT, kết nối Bluetooth, 2.4GHz và có dây.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "bb59b491-e6a9-49d7-9a4f-dabbe61e8cff",
+    "variantName": "Blue Switch",
+    "price": 1890000,
+    "stockQuantity": 30,
+    "attributesJson": "{\"switch\": \"Blue\", \"layout\": \"65%\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "93e32470-ad1f-46b3-a92e-02e57bd006af",
+    "variantName": "Red Switch",
+    "price": 1890000,
+    "stockQuantity": 28,
+    "attributesJson": "{\"switch\": \"Red\", \"layout\": \"65%\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "304abd27-2cad-46ff-b67d-6e69f1ac4268",
+  "name": "Corsair K70 RGB Pro",
+  "brand": "Corsair",
+  "basePrice": 3290000,
+  "description": "Bàn phím cơ fullsize có dây, switch Cherry MX, khung nhôm bền, đèn RGB, chế độ thi đấu.",
+  "categoryName": "Bàn phím cơ",
+  "variants": [
+   {
+    "id": "6a7ec866-6f3b-4539-aa8d-b962435645ec",
+    "variantName": "Cherry MX Red",
+    "price": 3290000,
+    "stockQuantity": 15,
+    "attributesJson": "{\"switch\": \"Red\", \"layout\": \"Fullsize\", \"connectivity\": \"wired\"}"
+   }
+  ]
+ },
+ {
+  "id": "0e96bad7-f465-43e6-b0c8-2e60d249c599",
+  "name": "HyperX Cloud II Wireless",
+  "brand": "HyperX",
+  "basePrice": 2790000,
+  "description": "Tai nghe gaming không dây âm thanh vòm 7.1, pin trên 30 giờ, micro tháo rời, đệm tai mút nhớ đệm êm.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "f4dbbf95-902d-474b-920f-e6aaccdc4028",
+    "variantName": "Đỏ đen",
+    "price": 2790000,
+    "stockQuantity": 20,
+    "attributesJson": "{\"color\": \"red\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "30a47568-ea99-47f2-ac3f-a60df265144b",
+  "name": "SteelSeries Arctis Nova Pro Wireless",
+  "brand": "SteelSeries",
+  "basePrice": 8990000,
+  "description": "Tai nghe gaming không dây cao cấp, chống ồn chủ động, pin đôi thay nóng, kèm hộp điều khiển GameDAC.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "7049e8e3-5ab3-4d0d-9fc4-34d16c62506b",
+    "variantName": "Đen",
+    "price": 8990000,
+    "stockQuantity": 6,
+    "attributesJson": "{\"color\": \"black\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "916a564c-c02a-4afb-bec6-6ffde896ec48",
+  "name": "Razer BlackShark V2 Pro",
+  "brand": "Razer",
+  "basePrice": 4490000,
+  "description": "Tai nghe không dây cho esports, driver TriForce 50mm, micro HyperClear, âm thanh vòm THX, nhẹ và thoải mái.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "4c99b99f-4a4b-41f6-9df3-7fdf07426a79",
+    "variantName": "Đen",
+    "price": 4490000,
+    "stockQuantity": 13,
+    "attributesJson": "{\"color\": \"black\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "c54878ef-692d-4667-8782-a6d3ef4e510a",
+  "name": "Logitech G Pro X 2 Lightspeed",
+  "brand": "Logitech",
+  "basePrice": 5290000,
+  "description": "Tai nghe gaming không dây driver graphene, micro rời, kết nối Lightspeed, Bluetooth và có dây.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "7c3dd5bd-5eab-4827-a501-4a7eb2d718fe",
+    "variantName": "Đen",
+    "price": 5290000,
+    "stockQuantity": 9,
+    "attributesJson": "{\"color\": \"black\", \"connectivity\": \"wireless\"}"
+   },
+   {
+    "id": "6c15d281-598f-418f-a793-bd3607b8e449",
+    "variantName": "Trắng",
+    "price": 5290000,
+    "stockQuantity": 7,
+    "attributesJson": "{\"color\": \"white\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "592c6f25-3bec-4cb0-9e73-00fbe4258ef6",
+  "name": "Corsair HS80 RGB Wireless",
+  "brand": "Corsair",
+  "basePrice": 3590000,
+  "description": "Tai nghe không dây âm thanh Dolby Atmos, micro đa hướng, đệm tai mút nhớ, đèn RGB.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "4bc79f66-0493-42f2-bff2-ceb18f3170f6",
+    "variantName": "Đen",
+    "price": 3590000,
+    "stockQuantity": 12,
+    "attributesJson": "{\"color\": \"black\", \"connectivity\": \"wireless\"}"
+   }
+  ]
+ },
+ {
+  "id": "51321e65-4cf5-4ecf-a82f-b46ddb522c58",
+  "name": "HyperX Cloud Stinger 2",
+  "brand": "HyperX",
+  "basePrice": 990000,
+  "description": "Tai nghe gaming có dây giá rẻ, nhẹ, micro xoay tắt tiếng, phù hợp người mới và phòng net.",
+  "categoryName": "Tai nghe gaming",
+  "variants": [
+   {
+    "id": "c28167f2-ae90-4ab8-98a1-c07fe57f680d",
+    "variantName": "Đen",
+    "price": 990000,
+    "stockQuantity": 35,
+    "attributesJson": "{\"color\": \"black\", \"connectivity\": \"wired\"}"
+   }
+  ]
+ },
+ {
+  "id": "19426511-c986-4107-8973-00b24ce9b1e7",
+  "name": "ASUS ROG Swift PG27AQN",
+  "brand": "ASUS",
+  "basePrice": 17990000,
+  "description": "Màn hình gaming 27 inch 2K 360Hz tấm nền IPS, phản hồi 1ms, G-Sync, dành cho esports chuyên nghiệp.",
+  "categoryName": "Màn hình gaming",
+  "variants": [
+   {
+    "id": "49de9840-653c-4114-9163-3c62123fe7bc",
+    "variantName": "27 inch 2K 360Hz",
+    "price": 17990000,
+    "stockQuantity": 5,
+    "attributesJson": "{\"size\": \"27\", \"resolution\": \"2560x1440\", \"refresh\": \"360Hz\"}"
+   }
+  ]
+ },
+ {
+  "id": "942eecc9-4f9a-41ad-9481-3f050cb0f18b",
+  "name": "LG UltraGear 27GP850-B",
+  "brand": "LG",
+  "basePrice": 8490000,
+  "description": "Màn hình gaming 27 inch 2K 165Hz Nano IPS, phản hồi 1ms, hỗ trợ G-Sync và FreeSync.",
+  "categoryName": "Màn hình gaming",
+  "variants": [
+   {
+    "id": "dcb25ea5-9931-43c2-be7d-d710535acb2b",
+    "variantName": "27 inch 2K 165Hz",
+    "price": 8490000,
+    "stockQuantity": 10,
+    "attributesJson": "{\"size\": \"27\", \"resolution\": \"2560x1440\", \"refresh\": \"165Hz\"}"
+   }
+  ]
+ },
+ {
+  "id": "995f55b3-7c87-4dac-a6ff-fc29267d9d23",
+  "name": "Samsung Odyssey G5 32",
+  "brand": "Samsung",
+  "basePrice": 6990000,
+  "description": "Màn hình cong 32 inch 2K 165Hz tấm nền VA, độ cong 1000R, FreeSync Premium, trải nghiệm đắm chìm.",
+  "categoryName": "Màn hình gaming",
+  "variants": [
+   {
+    "id": "f5a49abf-5b63-44b9-8b96-45a70887ad31",
+    "variantName": "32 inch 2K 165Hz",
+    "price": 6990000,
+    "stockQuantity": 12,
+    "attributesJson": "{\"size\": \"32\", \"resolution\": \"2560x1440\", \"refresh\": \"165Hz\"}"
+   }
+  ]
+ },
+ {
+  "id": "d1d620e6-42ea-4096-ab35-505e268d447d",
+  "name": "AOC 24G2SP",
+  "brand": "AOC",
+  "basePrice": 3490000,
+  "description": "Màn hình gaming 24 inch Full HD 165Hz tấm nền IPS, phản hồi 1ms, giá tốt cho người mới chơi FPS.",
+  "categoryName": "Màn hình gaming",
+  "variants": [
+   {
+    "id": "4df8d7a2-d81f-490f-90ac-811a32f9b5f4",
+    "variantName": "24 inch FHD 165Hz",
+    "price": 3490000,
+    "stockQuantity": 25,
+    "attributesJson": "{\"size\": \"24\", \"resolution\": \"1920x1080\", \"refresh\": \"165Hz\"}"
+   }
+  ]
+ },
+ {
+  "id": "2d8c7e59-9746-4195-a2ad-7286843bf0fa",
+  "name": "Dell Alienware AW2725DF",
+  "brand": "Dell",
+  "basePrice": 16990000,
+  "description": "Màn hình QD-OLED 27 inch 2K 360Hz, phản hồi 0.03ms, màu sắc rực rỡ, độ tương phản vô cực.",
+  "categoryName": "Màn hình gaming",
+  "variants": [
+   {
+    "id": "336d9e90-aacc-41d8-80c9-4e07b31966f0",
+    "variantName": "27 inch 2K 360Hz OLED",
+    "price": 16990000,
+    "stockQuantity": 4,
+    "attributesJson": "{\"size\": \"27\", \"resolution\": \"2560x1440\", \"refresh\": \"360Hz\"}"
+   }
+  ]
+ },
+ {
+  "id": "b68990f4-5acb-4690-9404-ec2afc1e76b2",
+  "name": "Secretlab Titan Evo",
+  "brand": "Secretlab",
+  "basePrice": 13990000,
+  "description": "Ghế gaming cao cấp, tựa lưng ngả 165 độ, đệm lumbar tích hợp, bọc da Neo hybrid hoặc vải SoftWeave.",
+  "categoryName": "Ghế gaming",
+  "variants": [
+   {
+    "id": "cc14c819-4ecb-4144-9c72-335fa1ede443",
+    "variantName": "Size R",
+    "price": 13990000,
+    "stockQuantity": 5,
+    "attributesJson": "{\"size\": \"regular\"}"
+   },
+   {
+    "id": "94cf1fe4-8eb3-4221-b1d4-bc02e7e49ba0",
+    "variantName": "Size L",
+    "price": 14490000,
+    "stockQuantity": 4,
+    "attributesJson": "{\"size\": \"large\"}"
+   }
+  ]
+ },
+ {
+  "id": "14f73755-b2f8-4478-bd3b-92d7427bc62a",
+  "name": "DXRacer Formula Series",
+  "brand": "DXRacer",
+  "basePrice": 6490000,
+  "description": "Ghế gaming kiểu đua, khung thép, tựa lưng ngả được, tay vịn 4D, bọc da PU bền đẹp.",
+  "categoryName": "Ghế gaming",
+  "variants": [
+   {
+    "id": "9effcebe-ffb0-4237-81c4-788e63909113",
+    "variantName": "Đen đỏ",
+    "price": 6490000,
+    "stockQuantity": 8,
+    "attributesJson": "{\"color\": \"red\"}"
+   }
+  ]
+ },
+ {
+  "id": "03355fc9-b759-4d8b-a271-80833a7144cb",
+  "name": "E-Dra Hercules EGC203",
+  "brand": "E-Dra",
+  "basePrice": 3290000,
+  "description": "Ghế gaming giá tốt cho học sinh sinh viên, tựa lưng ngả, gối đầu và gối lưng đi kèm, chân xoay chắc chắn.",
+  "categoryName": "Ghế gaming",
+  "variants": [
+   {
+    "id": "9bbb9413-8395-48dd-a64c-145dbd08bb31",
+    "variantName": "Đen xanh",
+    "price": 3290000,
+    "stockQuantity": 20,
+    "attributesJson": "{\"color\": \"blue\"}"
+   },
+   {
+    "id": "aeb15c6a-e50c-406e-a099-3bdd09143f43",
+    "variantName": "Đen đỏ",
+    "price": 3290000,
+    "stockQuantity": 18,
+    "attributesJson": "{\"color\": \"red\"}"
+   }
+  ]
+ },
+ {
+  "id": "bb00e9fe-b39f-4f56-b31e-a577b51a3fe6",
+  "name": "Razer Iskur V2",
+  "brand": "Razer",
+  "basePrice": 12490000,
+  "description": "Ghế gaming công thái học hỗ trợ lưng tối ưu, đệm lumbar tích hợp, tựa đầu điều chỉnh, bọc da tổng hợp.",
+  "categoryName": "Ghế gaming",
+  "variants": [
+   {
+    "id": "2fb5f053-d77a-499f-8c4b-8e60d12a39f4",
+    "variantName": "Đen xanh lá",
+    "price": 12490000,
+    "stockQuantity": 4,
+    "attributesJson": "{\"color\": \"green\"}"
+   }
+  ]
+ },
+ {
+  "id": "956e5a55-52a8-4c2b-a2c2-bd746d088765",
+  "name": "SteelSeries QcK Heavy XXL",
+  "brand": "SteelSeries",
+  "basePrice": 890000,
+  "description": "Lót chuột cỡ lớn bề mặt vải mịn, đế cao su dày, tối ưu độ kiểm soát cho FPS và MMO.",
+  "categoryName": "Lót chuột",
+  "variants": [
+   {
+    "id": "534c1eb0-c79b-4546-9e6a-f3e3866929bb",
+    "variantName": "XXL 900x400",
+    "price": 890000,
+    "stockQuantity": 40,
+    "attributesJson": "{\"size\": \"900x400\"}"
+   }
+  ]
+ },
+ {
+  "id": "711096d7-bc41-464d-8692-9a3c5860c56c",
+  "name": "Razer Gigantus V2 Large",
+  "brand": "Razer",
+  "basePrice": 590000,
+  "description": "Lót chuột bề mặt vải siêu mịn, đế cao su chống trượt, tối ưu cho cảm biến quang và laser.",
+  "categoryName": "Lót chuột",
+  "variants": [
+   {
+    "id": "27c3913b-9b5e-448e-85d9-5946840d5b01",
+    "variantName": "L 450x400",
+    "price": 590000,
+    "stockQuantity": 45,
+    "attributesJson": "{\"size\": \"450x400\"}"
+   }
+  ]
+ },
+ {
+  "id": "1416a4ac-f145-4296-8856-7abda18b5a78",
+  "name": "Logitech G640",
+  "brand": "Logitech",
+  "basePrice": 790000,
+  "description": "Lót chuột vải cỡ lớn cho DPI thấp, bề mặt đồng nhất, đế cao su ổn định, dành cho FPS.",
+  "categoryName": "Lót chuột",
+  "variants": [
+   {
+    "id": "c9030911-0ab6-46b2-96c6-d0e9286c2856",
+    "variantName": "L 460x400",
+    "price": 790000,
+    "stockQuantity": 30,
+    "attributesJson": "{\"size\": \"460x400\"}"
+   }
+  ]
+ },
+ {
+  "id": "0553a7a8-8719-4cc3-9863-dd4ede998ea1",
+  "name": "Artisan Hayate Otsu",
+  "brand": "Artisan",
+  "basePrice": 1290000,
+  "description": "Lót chuột cao cấp Nhật Bản, bề mặt cân bằng giữa tốc độ và kiểm soát, được dân FPS chuyên nghiệp ưa chuộng.",
+  "categoryName": "Lót chuột",
+  "variants": [
+   {
+    "id": "0cb8972d-61b7-4473-aac7-80f57c93cd0a",
+    "variantName": "M Soft",
+    "price": 1290000,
+    "stockQuantity": 10,
+    "attributesJson": "{\"size\": \"420x330\"}"
+   },
+   {
+    "id": "d5110837-6e35-4e4a-994a-508fc68830aa",
+    "variantName": "L Soft",
+    "price": 1490000,
+    "stockQuantity": 8,
+    "attributesJson": "{\"size\": \"490x420\"}"
+   }
+  ]
+ },
+ {
+  "id": "48cf7e67-c6e3-4edb-bc62-0edbd96067a9",
+  "name": "Corsair MM700 RGB Extended",
+  "brand": "Corsair",
+  "basePrice": 1190000,
+  "description": "Lót chuột cỡ lớn có đèn RGB viền, bề mặt vải mịn, tích hợp cổng USB, hợp với bàn phím và chuột Corsair.",
+  "categoryName": "Lót chuột",
+  "variants": [
+   {
+    "id": "caeebc0b-ca21-4f58-9d2b-47468a86b59c",
+    "variantName": "Extended 930x400",
+    "price": 1190000,
+    "stockQuantity": 14,
+    "attributesJson": "{\"size\": \"930x400\"}"
+   }
+  ]
+ }
+]

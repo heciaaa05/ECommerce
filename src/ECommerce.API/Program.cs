@@ -1,6 +1,7 @@
 using ECommerce.API.BackgroundJobs;
 using ECommerce.API.Health;
 using ECommerce.Application;
+using ECommerce.Application.Interfaces;
 using ECommerce.Infrastructure;
 using ECommerce.Infrastructure.Persistence;
 using Microsoft.EntityFrameworkCore;
@@ -48,6 +49,17 @@ if (app.Configuration.GetValue<bool>("Database:AutoMigrate"))
     using var scope = app.Services.CreateScope();
     var db = scope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
     await db.Database.MigrateAsync();
+
+    // Nạp ~30 sản phẩm gaming gear mẫu (chỉ khi DB chưa có sản phẩm nào): Database__SeedDemoData=true
+    if (app.Configuration.GetValue<bool>("Database:SeedDemoData"))
+    {
+        await DbSeeder.SeedDemoDataAsync(db);
+
+        // Seeder ghi thẳng vào DB nên phải xoá cache cũ (vd danh mục rỗng đã bị cache)
+        var cache = scope.ServiceProvider.GetRequiredService<ICacheService>();
+        await cache.RemoveAsync("categories:all");
+        await cache.RemoveByPrefixAsync("products:");
+    }
 }
 
 if (app.Environment.IsDevelopment())

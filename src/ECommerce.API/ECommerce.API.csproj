@@ -1,9 +1,10 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <TargetFramework>net10.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <!-- ID cố định: giải nén zip mới đè lên không làm mất user-secrets -->
     <UserSecretsId>ecommerce-api-secrets</UserSecretsId>
   </PropertyGroup>
 

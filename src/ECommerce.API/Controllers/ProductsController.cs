@@ -44,6 +44,21 @@ public class ProductsController : ControllerBase
         }
     }
 
+    // Gợi ý sản phẩm tương tự (content-based) từ service Python; service lỗi thì trả sản phẩm cùng danh mục
+    [HttpGet("{id}/recommendations")]
+    public async Task<ActionResult<List<RecommendationDto>>> GetRecommendations(Guid id, [FromQuery] int top = 5)
+    {
+        try
+        {
+            var result = await _mediator.Send(new GetRecommendationsQuery(id, top));
+            return Ok(result);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
+
     [HttpPost]
     [Authorize(Roles = "Admin,Seller")]
     public async Task<ActionResult<Guid>> Create([FromBody] CreateProductRequest request)

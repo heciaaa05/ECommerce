@@ -4,6 +4,7 @@ using ECommerce.Infrastructure.Caching;
 using ECommerce.Infrastructure.Identity;
 using ECommerce.Infrastructure.PaymentGateways;
 using ECommerce.Infrastructure.Persistence;
+using ECommerce.Infrastructure.Recommendation;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
@@ -37,6 +38,14 @@ public static class DependencyInjection
 
         services.AddScoped<ICacheService, RedisCacheService>();
         services.AddScoped<ICartService, CartService>();
+
+        // ---- Recommendation service (Python FastAPI) ----
+        var recommenderUrl = config["Recommender:BaseUrl"] ?? "http://localhost:8000";
+        services.AddHttpClient<IRecommendationService, RecommendationClient>(client =>
+        {
+            client.BaseAddress = new Uri(recommenderUrl.TrimEnd('/') + "/");
+            client.Timeout = TimeSpan.FromSeconds(3); // service lỗi thì fail nhanh để dùng phương án dự phòng
+        });
 
         // ---- Identity ----
         services.AddScoped<IJwtService, JwtService>();
