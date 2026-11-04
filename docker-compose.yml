@@ -1,0 +1,60 @@
+# Chạy toàn bộ stack:  docker compose up -d --build
+# Cần file .env cạnh file này (copy từ .env.example). Dừng container cũ sql-ecommerce/redis-ecommerce trước để khỏi trùng port.
+services:
+  sql:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: ecommerce-sql
+    environment:
+      ACCEPT_EULA: "Y"
+      MSSQL_SA_PASSWORD: ${SA_PASSWORD:-YourStrong@Passw0rd}
+    ports:
+      - "1433:1433"
+    volumes:
+      - sql-data:/var/opt/mssql        # dữ liệu DB nằm trong volume, xoá container không mất
+    healthcheck:
+      test: ["CMD-SHELL", "/opt/mssql-tools18/bin/sqlcmd -C -S localhost -U sa -P \"$$MSSQL_SA_PASSWORD\" -Q \"SELECT 1\" || exit 1"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 20s
+    restart: unless-stopped
+
+  redis:
+    image: redis:alpine
+    container_name: ecommerce-redis
+    command: ["redis-server", "--appendonly", "yes"]   # bật AOF để giỏ hàng không mất khi restart
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+    restart: unless-stopped
+
+  api:
+    build: .
+    container_name: ecommerce-api
+    depends_on:
+      sql:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development      # để bật Swagger; production thật thì đổi sang Production
+      Database__AutoMigrate: "true"
+      ConnectionStrings__DefaultConnection: "Server=sql,1433;Database=ECommerceDb;User Id=sa;Password=${SA_PASSWORD:-YourStrong@Passw0rd};TrustServerCertificate=True"
+      ConnectionStrings__Redis: "redis:6379"
+      JwtSettings__Secret: ${JWT_SECRET:-DOI_CHUOI_NAY_THANH_BI_MAT_DAI_IT_NHAT_32_KY_TU_123456}
+      VnPay__TmnCode: ${VNPAY_TMNCODE}
+      VnPay__HashSecret: ${VNPAY_HASHSECRET}
+      VnPay__ReturnUrl: ${VNPAY_RETURN_URL}
+    ports:
+      - "5203:8080"                            # giữ nguyên localhost:5203 để ngrok http 5203 vẫn dùng được
+    restart: unless-stopped
+
+volumes:
+  sql-data:
+  redis-data:

@@ -1,0 +1,15 @@
+## .NET
+bin/
+obj/
+*.user
+*.suo
+.vs/
+.vscode/
+
+## Secrets - KHÔNG commit khi dùng thật (xem README: dùng dotnet user-secrets)
+appsettings.Local.json
+appsettings.Production.json
+
+## Khác
+*.log
+.env
