@@ -1,5 +1,4 @@
 # ECommerce – Website bán Gaming Gear
-
 Backend thương mại điện tử cho cửa hàng **gaming gear** (chuột, bàn phím, tai nghe...), xây dựng bằng **ASP.NET Core theo Clean Architecture**. Đây là dự án portfolio, phát triển theo lộ trình 8 tuần; phần AI (gợi ý sản phẩm, chatbot RAG) sẽ là một service Python riêng ở các tuần sau.
 
 ## Trạng thái dự án
@@ -133,7 +132,6 @@ Trình duyệt → ASP.NET API → GET /recommend/{id} → Recommender (FastAPI)
 - Chạy cùng Docker Compose (service `recommender`, cổng 8000): `http://localhost:8000/health`
 - Chạy test: `cd recommender; pip install -r requirements.txt; python -m pytest -q`
 - Thử: `GET http://localhost:5203/api/Products/{id}/recommendations?top=5`
-
 ## Test nhanh qua Swagger
 
 1. `POST /api/Auth/register`, rồi nâng quyền Admin (xem bên dưới), rồi `POST /api/Auth/login` lại và bấm **Authorize** dán `accessToken`.
