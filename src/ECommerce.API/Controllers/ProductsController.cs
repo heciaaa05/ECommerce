@@ -1,3 +1,4 @@
+using ECommerce.API.Extensions;
 using ECommerce.Application.DTOs.Products;
 using ECommerce.Application.Features.Products.Commands;
 using ECommerce.Application.Features.Products.Queries;
@@ -52,6 +53,22 @@ public class ProductsController : ControllerBase
         {
             var result = await _mediator.Send(new GetRecommendationsQuery(id, top));
             return Ok(result);
+        }
+        catch (KeyNotFoundException ex)
+        {
+            return NotFound(new { message = ex.Message });
+        }
+    }
+
+    // Ghi nhận người dùng đã xem sản phẩm (dữ liệu hành vi cho gợi ý hybrid)
+    [HttpPost("{id}/view")]
+    [Authorize]
+    public async Task<IActionResult> RecordView(Guid id)
+    {
+        try
+        {
+            await _mediator.Send(new RecordProductViewCommand(User.GetUserId(), id));
+            return NoContent();
         }
         catch (KeyNotFoundException ex)
         {

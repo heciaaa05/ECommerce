@@ -1,4 +1,5 @@
 # ECommerce – Website bán Gaming Gear
+
 Backend thương mại điện tử cho cửa hàng **gaming gear** (chuột, bàn phím, tai nghe...), xây dựng bằng **ASP.NET Core theo Clean Architecture**. Đây là dự án portfolio, phát triển theo lộ trình 8 tuần; phần AI (gợi ý sản phẩm, chatbot RAG) sẽ là một service Python riêng ở các tuần sau.
 
 ## Trạng thái dự án
@@ -9,7 +10,7 @@ Backend thương mại điện tử cho cửa hàng **gaming gear** (chuột, b�
 | 3 | Thanh toán VNPay sandbox (IPN, kiểm tra chữ ký, idempotency) | Logic đã test bằng IPN giả; chờ VNPay duyệt website để thanh toán thật |
 | 4 | Redis caching + Docker hoá + health check | Hoàn thành, Docker Compose chạy ổn |
 | 5 | Gợi ý sản phẩm content-based (Python FastAPI + TF-IDF) | Code xong, chờ test trên Docker |
-| 6 | Gợi ý hybrid (kết hợp hành vi người dùng) | Chưa làm |
+| 6 | Gợi ý hybrid (kết hợp hành vi người dùng) | Đang làm: bước 1 ghi nhận hành vi + dữ liệu giả xong, bước 2 (thuật toán hybrid) chưa làm |
 | 7 | Chatbot RAG | Chưa làm |
 | 8 | CI/CD + tài liệu kiến trúc | Chưa làm |
 
@@ -56,6 +57,7 @@ Chiều phụ thuộc: `API → Infrastructure → Application → Domain`.
 | | `POST /api/Categories` | Admin |
 | Sản phẩm | `GET /api/Products`, `GET /api/Products/{id}` | Công khai |
 | | `GET /api/Products/{id}/recommendations?top=5` | Công khai |
+| | `POST /api/Products/{id}/view` (ghi nhận lượt xem) | Đăng nhập |
 | | `POST`, `PUT /{id}`, `DELETE /{id}` | Admin, Seller |
 | Giỏ hàng | `GET /api/Cart`, `POST/PUT /api/Cart/items`, `DELETE /api/Cart/items/{variantId}` | Đăng nhập |
 | Đơn hàng | `GET /api/Orders`, `GET /api/Orders/{id}`, `POST /api/Orders`, `POST /api/Orders/{id}/cancel` | Đăng nhập |
@@ -132,6 +134,17 @@ Trình duyệt → ASP.NET API → GET /recommend/{id} → Recommender (FastAPI)
 - Chạy cùng Docker Compose (service `recommender`, cổng 8000): `http://localhost:8000/health`
 - Chạy test: `cd recommender; pip install -r requirements.txt; python -m pytest -q`
 - Thử: `GET http://localhost:5203/api/Products/{id}/recommendations?top=5`
+
+## Dữ liệu hành vi (Tuần 6)
+
+- Bảng `UserInteractions` ghi nhận `View` (xem sản phẩm), `AddToCart` (thêm giỏ), `Purchase` (IPN xác nhận thanh toán thành công)
+- Dữ liệu GIẢ để thử hybrid: 60 user demo (`demo01@example.com` đến `demo60@example.com`, mật khẩu `Demo@12345`) chia 4 nhóm sở thích; tự nạp cùng dữ liệu mẫu khi `Database__SeedDemoData=true` và chưa có hành vi nào
+- Sau khi thêm thực thể mới phải tạo migration:
+
+```powershell
+dotnet ef migrations add AddUserInteractions --project src\ECommerce.Infrastructure --startup-project src\ECommerce.API
+```
+
 ## Test nhanh qua Swagger
 
 1. `POST /api/Auth/register`, rồi nâng quyền Admin (xem bên dưới), rồi `POST /api/Auth/login` lại và bấm **Authorize** dán `accessToken`.

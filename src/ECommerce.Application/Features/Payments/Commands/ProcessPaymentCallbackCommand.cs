@@ -1,4 +1,5 @@
 using ECommerce.Application.Interfaces;
+using ECommerce.Domain.Entities;
 using ECommerce.Domain.Enums;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -36,6 +37,7 @@ public class ProcessPaymentCallbackCommandHandler
 
         var order = await _context.Orders
             .Include(o => o.Payment)
+            .Include(o => o.Items).ThenInclude(i => i.ProductVariant)
             .FirstOrDefaultAsync(o => o.Id == orderId, ct);
 
         if (order is null || order.Payment is null)
@@ -61,6 +63,17 @@ public class ProcessPaymentCallbackCommandHandler
             order.Payment.TransactionRef = result.TxnRef;
             order.Status = OrderStatus.Paid;
             order.UpdatedAt = DateTime.UtcNow;
+
+            // Ghi nhận hành vi "mua" cho gợi ý (mỗi sản phẩm một lần dù mua nhiều biến thể)
+            foreach (var productId in order.Items.Select(i => i.ProductVariant.ProductId).Distinct())
+            {
+                _context.UserInteractions.Add(new UserInteraction
+                {
+                    UserId = order.UserId,
+                    ProductId = productId,
+                    Type = InteractionType.Purchase
+                });
+            }
         }
         else
         {

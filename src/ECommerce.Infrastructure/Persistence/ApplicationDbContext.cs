@@ -17,6 +17,7 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
     public DbSet<Order> Orders => Set<Order>();
     public DbSet<OrderItem> OrderItems => Set<OrderItem>();
     public DbSet<Payment> Payments => Set<Payment>();
+    public DbSet<UserInteraction> UserInteractions => Set<UserInteraction>();
 
     protected override void OnModelCreating(ModelBuilder builder)
     {
@@ -98,6 +99,20 @@ public class ApplicationDbContext : DbContext, IApplicationDbContext
             e.HasOne(p => p.Order)
                 .WithOne(o => o.Payment)
                 .HasForeignKey<Payment>(p => p.OrderId)
+                .OnDelete(DeleteBehavior.Cascade);
+        });
+
+        builder.Entity<UserInteraction>(e =>
+        {
+            e.HasIndex(i => new { i.UserId, i.ProductId });
+            e.HasIndex(i => i.ProductId);
+            e.HasOne(i => i.User)
+                .WithMany()
+                .HasForeignKey(i => i.UserId)
+                .OnDelete(DeleteBehavior.Restrict);
+            e.HasOne(i => i.Product)
+                .WithMany()
+                .HasForeignKey(i => i.ProductId)
                 .OnDelete(DeleteBehavior.Cascade);
         });
 

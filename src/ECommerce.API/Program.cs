@@ -54,6 +54,7 @@ if (app.Configuration.GetValue<bool>("Database:AutoMigrate"))
     if (app.Configuration.GetValue<bool>("Database:SeedDemoData"))
     {
         await DbSeeder.SeedDemoDataAsync(db);
+        await DemoInteractionSeeder.SeedAsync(db);   // 60 user demo + hành vi giả để thử gợi ý hybrid
 
         // Seeder ghi thẳng vào DB nên phải xoá cache cũ (vd danh mục rỗng đã bị cache)
         var cache = scope.ServiceProvider.GetRequiredService<ICacheService>();
